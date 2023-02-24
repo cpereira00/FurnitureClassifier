@@ -20,6 +20,7 @@ To run the app:
 2. Run the flask app
 
 Additional steps to explore the model
+
 3. download the dataset, unzip it and place in root of directory
 4. Run the dataHandler.py script
 5. Run the trainer.ipynb script
