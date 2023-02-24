@@ -25,7 +25,7 @@ def predict():
 
     # get the image
     image = '../Dataset/test/bed/Baxton Studio Adelaide Retro Modern Light Grey Fabric Upholstered Queen Size Platform Bed.jpg'
-    # image = request.files["image"]
+    image = request.files["image"]
     image = Image.open(image)
 
     image = preprocess_image(image)
@@ -33,7 +33,7 @@ def predict():
     predictions = model.predict(image)
     predicted_category = np.argmax(predictions, axis=1)[0]
 
-    response = {'message': f'{predictions},{classes[predicted_category]}'}
+    response = {'message': f'{classes[predicted_category]}'}
 
     return response
 
