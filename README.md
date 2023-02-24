@@ -15,6 +15,15 @@ files:
 - trainer.ipynb: performs data augmentation/transformation and builds the neural network model. Evaluations are also present within file.
 - deployment/main.py: flask app containing API call
 
+To run the app:
+1. Clone the repository
+2. Run the flask app
+
+Additional steps to explore the model
+3. download the dataset, unzip it and place in root of directory
+4. Run the dataHandler.py script
+5. Run the trainer.ipynb script
+ 
 To classify an image, send a POST request to http://localhost:5000/predict, with the image file in the request body.
 ex: `curl -X POST -F "image=@/path/to/image.jpg" http://localhost:5000/predict`
 
