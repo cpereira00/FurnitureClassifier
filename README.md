@@ -1,6 +1,12 @@
 # FurnitureClassifier
 
-This is a simple Flask API that uses transfer learning to build a neural network model on top of a pretrained model to classify images into three categories: "Chair", "Sofa", and "Bed". The model was trained on a custom dataset consisting of images of furniture items and produces an accuracy score of 79%.
+This is a simple Flask API that uses transfer learning to build a neural network model on top of a pretrained model to classify images into three categories: "Chair", "Sofa", and "Bed". The model was trained on a custom dataset consisting of images of furniture items and produces an accuracy score of 82%.
+
+Model details:
+![image](https://user-images.githubusercontent.com/62851785/221097662-28094d4b-d346-4b4c-bdf2-844c3add3489.png)
+
+Model Classification report:
+![image](https://user-images.githubusercontent.com/62851785/221097694-060e4968-c5d0-4f09-949f-596bd94cc063.png)
 
 files:
 - datahandler.py: used to split dataset into train/test/val directories and resizes the images to a smaller format to prevent overfitting.
